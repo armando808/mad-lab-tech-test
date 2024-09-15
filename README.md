@@ -1,7 +1,5 @@
 # MadLab Gutenberg Task
 
-## Note for the non-technical: right click "open preview" on the "README.md" file to view the nicely formatted version!
-
 ## How to Run
 
 1. Install dependencies:
@@ -21,4 +19,8 @@
 4. To view the data for task 2, the uppercase subjects task, open your browser and visit:
     ```bash
     http://localhost:3000/books/uppercase-subjects
+
+5. To view the data for task 3, the authors from the last 200 years task, open your browser and visit:
+    ```bash
+    http://localhost:3000/books/recent-authors
 
