@@ -6,6 +6,10 @@ const router = express.Router()
 router.get('/', async (req, res) => {
     const data = await fetchBooks()
 
+    if (data.error) {
+        return res.status(data.status || 500).send(`<h1>${data.message}</h1>`)
+    }
+
     if (data && data.results) {
         const uppercaseSubjects = data.results.map(book => {
             book.subjects = book.subjects.map(subject => subject.toUpperCase())
