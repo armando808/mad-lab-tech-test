@@ -18,3 +18,7 @@
     ```bash
     http://localhost:3000/books/sorted
 
+4. To view the data for task 2, the uppercase subjects task, open your browser and visit:
+    ```bash
+    http://localhost:3000/books/uppercase-subjects
+
