@@ -36,11 +36,17 @@ router.get('/', async (req, res) => {
         uppercaseSubjects.forEach(book => {
             pageContent += `
                 <li>
-                        <strong>${book.title}</strong> by ${book.authors.map(author => author.name).join(", ")}
-                        <br>Subjects: ${book.subjects.join(", ")}
+                    <strong>Title:</strong> ${book.title}<br>
+                    <strong>ID:</strong> ${book.id}<br>
+                    <strong>Authors:</strong> ${book.authors.map(author => author.name).join(", ")}<br>
+                    <strong>Subjects:</strong> ${book.subjects.join(", ")}<br>
+                    <strong>Bookshelves:</strong> ${book.bookshelves.join(", ")}<br>
+                    <strong>Languages:</strong> ${book.languages.join(", ")}<br>
+                    <strong>Download Count:</strong> ${book.download_count}<br>
                 </li>
+                <hr>
             `;
-        })
+        });
 
         pageContent += `
             </ul>
