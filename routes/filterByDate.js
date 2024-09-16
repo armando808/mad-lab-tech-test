@@ -38,7 +38,7 @@ router.get("/", async (req, res) => {
             <ul>
         `;
 
-        filteredBooks.forEach(book => {
+        recentBooks.forEach(book => {
             pageContent += `
                 <li>
                     <strong>Title:</strong> ${book.title}<br>

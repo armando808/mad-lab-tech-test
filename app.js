@@ -2,6 +2,7 @@ const express = require('express')
 const sortByIdRoute = require('./routes/sortById.js')
 const uppercaseSubjectsRoute = require('./routes/uppercaseSubjects.js')
 const recentAuthorsRoute = require('./routes/filterByDate.js')
+const findAnEntryRoute = require("./routes/findAnEntry.js")
 
 const app = express()
 const PORT = 3000
@@ -9,6 +10,7 @@ const PORT = 3000
 app.use('/books/sorted', sortByIdRoute)
 app.use('/books/uppercase-subjects', uppercaseSubjectsRoute)
 app.use('/books/recent-authors', recentAuthorsRoute)
+app.use('/books/find-the-book', findAnEntryRoute)
 
 app.use((req, res) => {
     res.status(404).send("<h1>404 - Not Found</h1>")
