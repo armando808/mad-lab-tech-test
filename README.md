@@ -2,7 +2,10 @@
 
 Please fork and clone the repo from GitHub, then open using VSCode or similar, and open the terminal, ready to to run the commands.
 
-The only assumptions I can think that I've made, are that for the first 2 tasks, you want the first page of results (from using the standard request) and then want these manipulated as described in the task.
+## Assumptions
+
+For the first two tasks, I assume that you wanted the first page of results (from the standard request), and then for these results to be manipulated as described in the task.
+
 
 ## How to Run
 
