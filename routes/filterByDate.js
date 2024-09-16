@@ -35,6 +35,7 @@ router.get("/", async (req, res) => {
         </head>
         <body>
             <h1>Books by Authors from the Last 200 Years</h1>
+            <a class="home-btn" href="/books/tasks-home">Home</a>
             <ul>
         `;
 

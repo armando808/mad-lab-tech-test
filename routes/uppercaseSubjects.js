@@ -30,6 +30,7 @@ router.get('/', async (req, res) => {
         </head>
         <body>
             <h1>Books with Uppercase Subjects</h1>
+            <a class="home-btn" href="/books/tasks-home">Home</a>
             <ul>
         `;
 
